@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/* font-family: 'Lilita One', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+ */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif ;
+    box-sizing: border-box; /**/
+    transition: all 0.5s;
+    
+}
+a{color: inherit; text-decoration: none;}
+li{list-style: none;}
+img{display: block; max-width: 100%; margin: 0 auto;}
+
+header{
+    background-image: url(mainbg.png);
+    background-size: cover;
+    padding: 200px;
+}
+header .top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+header .top .logo{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+header .top ul{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    margin-right: 30px;
+}
+header .top ul li{
+    margin-left: 20px;
+}
+header .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .main .text{
+    justify-content: center;
+}
+header .main h1{
+    font-family: 'Lilita One', cursive;
+    color: rgb(55, 55, 126);
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+header .main p{
+    color: rgb(55, 55, 126);
+    text-align: center;
+}
+
+section{
+    margin: 100px auto;
+    width: 100%;
+    overflow: hidden;
+    padding: 15vh 0;
+    text-align: center;
+}
+section .text{
+    text-align: center;
+}
+section .text h3{
+    font-family: 'Lilita One', cursive;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+section .donut{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 50px auto;
+    margin-bottom: 0;
+}
+section .donut .box{
+    flex: 1 1 20%;
+    margin: 10px;
+    background-color: rgb(250, 182, 205);
+    border-radius: 100%;
+    padding: 10px;
+}
+article{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    margin-top: 30px;
+    display: flex;
+}
+article .left{
+    width: 50%;
+    height: 80vh;
+    background-image: url(gridleftBg.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+article .left h1{
+    font-family: 'Lilita One', cursive;
+    color: rgb(59, 59, 59);
+    font-size: 50px;
+}
+article .left p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+article .left ul{
+    font-size: 13px;
+}
+article .left ul li{
+    list-style: circle;
+    margin-bottom: 20px;
+}
+article .right{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;/**/
+}
+article .right .ritop{
+    background-image: url(gridrightBg_1.png);
+    background-size: cover;
+    padding: 40px;
+    width: 100%;
+    height: 40vh;
+}
+article .right .ritop h2{
+    font-family: 'Lilita One', cursive;
+    color: white;
+}
+article .right .ritop input[type="button"]{
+    width: 30%;
+    height: 5vh;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+article .right .ribot{
+    background-image: url(gridrightBg_2.png);
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    padding: 40px;
+    position: relative;
+}
+article .right .ribot h2{
+    font-family: 'Lilita One', cursive;
+    color: rgb(248, 90, 143);
+}
+article .right .ribot .icon{
+    color: rgb(248, 90, 143);
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+article .right .ribot .icon a{
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+article .right .ribot .icon i{
+    display: block;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+footer{
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    height: 10vh;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1024px) {
+    header .top{
+        background-color: rgba(255, 255, 255, 0.699);
+        display: flex;
+        flex-direction: column; /**/
+        height: auto;
+        align-items: center;
+    }
+    header .top .logo{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    header .top ul{
+        padding: 20px;
+    }
+    header .main{
+        height: 100vh;
+    }
+    header .main h1{
+        font-size: 50px;
+    }
+    header .main p{
+        font-size: 10px;
+    }
+    section .donut{
+        width: 90%;
+    }
+    section .donut .box{
+        flex: 1 1 30%;
+    }
+    article{
+        height: 100vh;
+        flex-direction: column;
+    }
+    article .left{
+        width: 100%;
+        height: 60vh;
+    }
+    article .right{
+        width: 100%;
+        height: 30vh;
+        flex-direction: row;
+    }
+    article .right .ritop h1{
+        font-size: 25px;
+    }
+}
